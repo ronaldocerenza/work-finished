@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jakenpo</title>
+</head>
+<body>
+  <h1>Jakenpo</h1>
+  <h3>Jogador</h3>
+  <img src="./img/papel.jpg" alt="papel">
+  <img src="./img/pedra.jpg" alt="pedra">
+  <img src="./img/tesoura.jpg" alt="tesoura">
+  <form action="frmjkp">
+    <input type="radio" name="grupo" id="papel">papel
+    <input type="radio" name="grupo" id="pedra">pedra
+    <input type="radio" name="grupo" id="tesoura">tesoura
+    <div>
+      <input type="button" value=" JOGAR " onclick="jogar()">
+      <input type="reset" value=" RESET " onclick="resetar()">
+    </div>    
+  </form>
+  <hr>
+  <h3>The Game</h3>
+  <img src="./img/computer.png" alt="computer" id="computer">
+  <hr>
+  <h3 id="placar"></h3>
+  <script src="jkp.js"></script>
+</body>
+</html>
